@@ -14,11 +14,11 @@ int main(int argc, char *argv[])
 
     int *data1 = malloc(sizeof(int));
     *data1 = 19;
-    mvector_push(vect, data1);
+    mvector_push(vect, (void*)data1);
 
     int *data2 = malloc(sizeof(int));
     *data2 = 72;
-    mvector_push(vect, data2);
+    mvector_push(vect, (void*)data2);
 
     printf("%d\n", *((int*)mvector_get(vect, 0))); //-> 19
 
