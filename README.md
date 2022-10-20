@@ -27,6 +27,7 @@ int main(int argc, char *argv[])
     printf("%d\n", *((int*)mvector_get(vect, 0))); // > 72
 
     mvector_free(vect);
+
     return 0;
 }
 ```
