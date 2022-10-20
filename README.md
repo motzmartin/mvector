@@ -20,11 +20,11 @@ int main(int argc, char *argv[])
     *data2 = 72;
     mvector_push(vect, (void*)data2);
 
-    printf("%d\n", *((int*)mvector_get(vect, 0))); //-> 19
+    printf("%d\n", *((int*)mvector_get(vect, 0))); //> 19
 
     mvector_remove(vect, 0);
 
-    printf("%d\n", *((int*)mvector_get(vect, 0))); //-> 72
+    printf("%d\n", *((int*)mvector_get(vect, 0))); //> 72
 
     mvector_free(vect);
     return 0;
