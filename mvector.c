@@ -37,18 +37,18 @@ int mvector_push(MVECTOR *vect, void *data)
 
 void *mvector_get(MVECTOR *vect, int index)
 {
-    int i = 0;
-    MPART *p = vect->first;
-    while (p != NULL)
+    // Code refait le 20/10/2022
+    if (index < 0 || index > vect->size - 1)
     {
-        if (i == index)
-        {
-            return p->data;
-        }
-        p = p->next;
-        i++;
+        return NULL;
     }
-    return NULL;
+    MPART *p = vect->first;
+    while (index > 0)
+    {
+        p = p->next;
+        index--;
+    }
+    return p->data;
 }
 
 int mvector_remove(MVECTOR *vect, int index)
