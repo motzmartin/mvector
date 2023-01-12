@@ -73,7 +73,7 @@ int mvector_remove(MVECTOR* vect, unsigned int index)
 	return 0;
 }
 
-void mvector_free(MVECTOR* vect, int free_data)
+void mvector_free(MVECTOR* vect, char free_data)
 {
 	MPART* p = vect->first;
 	free(vect);
