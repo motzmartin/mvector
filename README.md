@@ -1,7 +1,8 @@
 # mvector
+
 C/C++ library to work with vectors.
 
-Code example:
+### Code example:
 
 ```c
 #include <stdio.h>
