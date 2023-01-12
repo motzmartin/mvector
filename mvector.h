@@ -33,6 +33,6 @@ void* mvector_get(MVECTOR* vect, unsigned int index);
 int mvector_remove(MVECTOR* vect, unsigned int index);
 
 /* Free the specified vector and all parts associated to it if "free_data" is set to 1. */
-void mvector_free(MVECTOR* vect, int free_data);
+void mvector_free(MVECTOR* vect, char free_data);
 
 #endif
